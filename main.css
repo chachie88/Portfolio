@@ -1,0 +1,36 @@
+* {
+    font-family: 'Roboto Mono', monospace;   
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+nav, footer {
+    background-color: lightblue;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  header {
+      padding: 10px;
+  }
+
+  section {
+      min-height: 200px;
+      padding: 6% 0;
+      background-color: gray;
+  }
+
+  section:nth-child(even) {
+    background-color: #ddd;
+  }
