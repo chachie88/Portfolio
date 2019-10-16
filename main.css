@@ -1,19 +1,19 @@
-* {
-    font-family: 'Roboto Mono', monospace;   
+* {   
     box-sizing: border-box;
+    color: white;
 }
 
 body {
     font-size: 20px;
     text-align: center;
     line-height: 2;
-}
-
-nav, footer {
-    background-color: lightblue;
+    margin: 0;
+    padding: 0;
 }
 
 nav {
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,14 +23,42 @@ nav {
 
   header {
       padding: 10px;
+      color: white;
+      /*background-color: rgb(65, 4, 46);*/
+      background-color: rgb(22, 65, 80);
   }
 
   section {
       min-height: 200px;
       padding: 6% 0;
-      background-color: gray;
+      /*background-color: gray;*/
   }
 
-  section:nth-child(even) {
+  section.bio {
+    background-color: rgb(45, 92, 109);
+  }
+
+  section.projects {
+    background-color: rgb(76, 114, 128);
+  }
+
+  /*section:nth-child(even) {
     background-color: #ddd;
+  }*/
+
+
+  h1 {
+    /*font-family: 'Hepta Slab', serif;*/
+    font-family: 'Liu Jian Mao Cao', cursive;
+    font-size: 60px;
+  }
+
+  h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+  }
+
+  p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
   }
