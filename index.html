@@ -4,25 +4,47 @@
         <title>Profile HTML Wireframe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="main.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:700|Titillium+Web:600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Liu+Jian+Mao+Cao|Quicksand&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav role="navigation">Nav</nav>
         <main>
             <header>
-                <h1>Charlene Johnson</h1>
-                <p>This is where I'll write the Headline section of my portfolio</p>
+                <nav role="navigation">
+                    <ul>
+                        <li id="aboutme"><a href="#bio">About Me</a></li>
+                        <li id="aboutme"><a href="#projects">Projects</a></li>
+                        <li id="github"><a href="https://github.com/chachie88" target="_blank">GitHub</a></li>
+                        <li id="linkedIn"><a href="https://www.linkedin.com/in/charlene-johnson-42032318a/" target="_blank">LinkedIn</a></li>
+
+                    </ul>
+                </nav>
+                <div class="container one">
+                    <h1>Charlene Johnson</h1>
+                    <p>Budding Web Developer. Divergent Thinker. Life Enthusiast.</p>
+                </div>
             </header>
-            <section class="bio">
+            <section class="container bio" id="bio">
                 <h2>About Me</h2>
-                <p>This is where I'll write the Bio section of my portfolio.</p>
+                <p>A little about myself.. I’m currently completing the Web Developer Career Path bootcamp at Bloc. I’ve found a love for coding that stems from my passion to build things.</p></br>
+                <p>When I’m not coding, I’m solving jigsaw puzzles, playing with my dogs, hiking, or in search of the most delicious “________”! I love learning new things and working collaboratively with people.</p>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h2>Projects</h2>
+                <div id="proj1">
+                    <img class="proj" src="PortfolioImages/startScreen.png" alt="Start Screen">
+                    <p>Test your knowledge of the National Parks found in the U.S.A with this app built using jQuery. This app was inspired by my love for knowlegdge, nature and hiking.</p></br>
+                    <div class="liverepo">
+                        <a class="liverepo" href="https://chachie88.github.io/National-Parks-Quiz-App/">LIVE</a>
+                        <a class="liverepo" href="https://github.com/chachie88/Quiz-App">REPO</a>
+                    </div>      
+                </div>
             </section>
         </main>
         <footer>
-            <p>Contact Info</p>
+            <p>Email me at: char.johnson888@gmail.com</p>
         </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>
