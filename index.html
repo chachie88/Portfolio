@@ -3,28 +3,24 @@
     <head>
         <title>Profile HTML Wireframe</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="main.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald:700|Titillium+Web:600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Liu+Jian+Mao+Cao|Quicksand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao|Quicksand|Titillium+Web:600&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
             <header>
-                <nav role="navigation">
+                <nav>
                     <ul>
-                        <li id="aboutme"><a href="#bio">About Me</a></li>
-                        <li id="aboutme"><a href="#projects">Projects</a></li>
-                        <li id="github"><a href="https://github.com/chachie88" target="_blank">GitHub</a></li>
-                        <li id="linkedIn"><a href="https://www.linkedin.com/in/charlene-johnson-42032318a/" target="_blank">LinkedIn</a></li>
-
-                    </ul>
+                        <li class="aboutme"><a href="#bio">About Me</a></li>
+                        <li class="projects"><a href="#projects">Projects</a></li>
+                        <li class="contactinfo"><a href="#contactinfo">Contact Info</a></li>
                 </nav>
-                <div class="container one">
-                    <h1>Charlene Johnson</h1>
-                    <p>Budding Web Developer. Divergent Thinker. Life Enthusiast.</p>
+                <div>
+                    <h1 class="center">Charlene Johnson</h1>
+                    <p class="center">Budding Web Developer. Divergent Thinker. Life Enthusiast.</p>
                 </div>
             </header>
-            <section class="container bio" id="bio">
+            <section class="bio" id="bio">
                 <h2>About Me</h2>
                 <p>A little about myself.. I’m currently completing the Web Developer Career Path bootcamp at Bloc. I’ve found a love for coding that stems from my passion to build things.</p></br>
                 <p>When I’m not coding, I’m solving jigsaw puzzles, playing with my dogs, hiking, or in search of the most delicious “________”! I love learning new things and working collaboratively with people.</p>
@@ -33,17 +29,24 @@
                 <h2>Projects</h2>
                 <div id="proj1">
                     <img class="proj" src="PortfolioImages/startScreen.png" alt="Start Screen">
-                    <p>Test your knowledge of the National Parks found in the U.S.A with this app built using jQuery. This app was inspired by my love for knowlegdge, nature and hiking.</p></br>
-                    <div class="liverepo">
-                        <a class="liverepo" href="https://chachie88.github.io/National-Parks-Quiz-App/">LIVE</a>
-                        <a class="liverepo" href="https://github.com/chachie88/Quiz-App">REPO</a>
+                    <p class="one title">Title: National Parks Quiz App</p>
+                    <p class="one desc">Description: Test your knowledge of the National Parks found in the U.S.A with this app. This app was inspired by my love for nature and hiking.</p>
+                    <p class="one langs">Languages Used: HTML, CSS, JavaScript & jQuery</p>
+                    <div class="lr">
+                        <a class="liverepo" href="https://chachie88.github.io/National-Parks-Quiz-App/" target="_blank">LIVE</a>
+                        <a class="liverepo" href="https://github.com/chachie88/Quiz-App" target="_blank">REPO</a>
                     </div>      
                 </div>
             </section>
+            <section class="contactinfo" id="contactinfo">
+                <h2>Contact Me</h2>
+                <ul>
+                    <li id="email"><a class="contactinfo" href="mailto:char.johnson888@gmail.com">Email</a></li>
+                    <li id="github"><a class="contactinfo" href="https://github.com/chachie88" target="_blank">GitHub</a></li>
+                    <li id="linkedIn"><a class="contactinfo" href="https://www.linkedin.com/in/charlene-johnson-42032318a/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </section>
         </main>
-        <footer>
-            <p>Email me at: char.johnson888@gmail.com</p>
-        </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
     </body>

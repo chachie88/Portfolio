@@ -13,10 +13,9 @@ body {
 
 nav {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     color: dark gray;
     background-color: white;
-    font-family: 'Quicksand', sans-serif;
     position: fixed;
     top: 0;
     left: 0;
@@ -31,7 +30,6 @@ nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: right;
     position: relative;
     top: 10px;
   }
@@ -41,7 +39,7 @@ nav {
     display: inline;
   }
 
-  a {
+  a:not(.liverepo) {
     font-family: 'Titillium Web', sans-serif;
     color: rgb(61, 61, 61);
     padding: 10px;
@@ -86,15 +84,11 @@ nav {
     background-color: rgb(76, 114, 128);
   }
 
-  footer p {
-    background-color: white;
-    color: black;
-  }
-
   h1 {
     font-family: 'Liu Jian Mao Cao', cursive;
-    font-size: 50px;
+    font-size: 45px;
     margin-bottom: 0;
+    padding-top: 20px;
   }
 
   h2 {
@@ -120,20 +114,29 @@ nav {
     width: 280px;
   }
 
-  /*#proj1 {
-    display: flex;
-    flex-direction: column;
-  }*/
+  .one {
+    display: block;
+  }
 
   .liverepo {
+    font-family: 'Titillium Web', sans-serif;
     color: white;
-    position: relative;
-    bottom: 20px;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  section.contactinfo {
+    background-color: rgb(90, 126, 138);
+    padding: 0;
+  }
+
+  a.contactinfo {
+    color: white;
   }
 
 
   /*for tablet screens*/
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 768px) {
     .proj {
       height: 400px;
       width: 560px;
@@ -154,13 +157,63 @@ nav {
     p {
       font-size: 20px;
     }
-  }
 
-  /*for desktop screens*/
-  @media only screen and (min-width: 601px) {
-    p {
-      padding: 0 150px 0;
+    nav {
+      display: none;
     }
   }
 
+  /*for desktop screens*/
+  @media only screen and (min-width: 1170px) {
+    header {
+      width: 50%;
+      float: left;
+      height: 541.47px;
+    }
+
+    .bio {
+      width: 50%;
+      float: right;
+      height: 541.47px;
+    }
+
+    .center {
+      position: relative;
+      top: 50px;
+    }
+
+    img.proj {
+      float: left;
+      position: relative;
+      top: 20px;
+    }
+
+    .one {
+      font-size: 22px;
+      margin-left: 589px;
+      margin-right: 25px;
+      position: relative;
+      top: 60px;
+    }
+
+    .projects {
+      height: 1100px;
+    }
+
+    section.contactinfo {
+      height: 250px;
+      text-align: center;
+    }
+
+    a {
+      color: white;
+      font-size: 25px;
+    }
+
+    .liverepo {
+      position: relative;
+      top: 60px;
+    }
+
+  }
 
