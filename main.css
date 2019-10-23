@@ -16,7 +16,6 @@ nav {
     font-size: 18px;
     color: dark gray;
     background-color: white;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -69,6 +68,14 @@ nav {
   header {
       padding: 10px;
       background-color: rgb(22, 65, 80);
+  }
+
+  .first {
+    padding-bottom: 12px;
+  }
+
+  .second {
+    padding-top: 12px;
   }
 
   section {
@@ -186,14 +193,18 @@ nav {
       float: left;
       position: relative;
       top: 20px;
+      left: 25px;
+      height: 400px;
+      width: 500px;
     }
 
     .one {
       font-size: 22px;
+      text-align: left;
       margin-left: 589px;
       margin-right: 25px;
       position: relative;
-      top: 60px;
+      top: 30px;
     }
 
     .projects {
@@ -212,7 +223,8 @@ nav {
 
     .liverepo {
       position: relative;
-      top: 60px;
+      top: 50px;
+      right: 100px;
     }
 
   }
