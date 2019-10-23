@@ -125,6 +125,14 @@ nav {
     display: block;
   }
 
+  .title {
+    padding-bottom: 25px;
+  }
+
+  .desc {
+    padding-bottom: 25px;
+  }
+
   .liverepo {
     font-family: 'Titillium Web', sans-serif;
     color: white;
